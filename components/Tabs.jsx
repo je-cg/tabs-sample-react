@@ -10,7 +10,7 @@ class Tabs extends React.Component {
 			{this.props.tabs.map(function(tab){
 				return (
 					// <Tab data={tab} isActive={this.props.selectedTab === tab} handleClick={this.props.changeTab.bind(this,tab)} />
-					<Tab data={tab} isActive={this.props.selectedTab === tab} handleClick={this.props.changeTab} />
+					<Tab data={tab} isActive={this.props.selectedTab === tab} handleClick={this.props.changeTab.bind(this.parent,tab)} />
 					);
 			}.bind(this))}      
 			</ul>

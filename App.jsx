@@ -16,12 +16,12 @@ class App extends React.Component {
 		};
 	}
 	handleClick(tab) {
-		console.log("from handleClick", tab);
+		// console.log("from handleClick", tab);
 		this.setState({Selected: tab});
-		console.log("context",this);
+		// console.log("from handleClick", this.state);
 	} 
 	render() {
-		console.log("from render", this.state);
+		// console.log("from render", this.state);
 		return (
 			<div>
 			<Tabs tabs={Data} selectedTab={this.state.Selected} changeTab={this.handleClick.bind(this)} />
